@@ -7,7 +7,7 @@ import Lobby from "./Screens/Lobby/Lobby";
 import "./App.css";
 import Game from "./Screens/Game/Game";
 
-// const port = process.env.port;
+const port = process.env.port;
 
 const socket = io(`:${port}`, { autoConnect: false });
 // const socket = io(
