@@ -1,0 +1,28 @@
+.player-name {
+  margin: 0.75rem 0;
+  height: 2rem;
+  width: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+.player-name:focus {
+  border-color: #212529;
+}
+
+.home-container {
+  display: flex;
+  flex: 0 1 auto;
+  max-width: 490px;
+  min-width: 300px;
+  justify-content: center;
+  align-content: center;
+  margin: 50px auto;
+  padding: 0 25px;
+}
+
+.create-room-btn {
+  width: 100%;
+}

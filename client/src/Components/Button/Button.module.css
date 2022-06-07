@@ -1,0 +1,16 @@
+.btn {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  min-width: 100px;
+  background-color: #2b8a3e;
+}
+
+.btn:hover {
+  background-color: #37b24d;
+}

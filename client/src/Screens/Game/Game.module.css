@@ -1,0 +1,36 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 5rem);
+  padding: 1rem;
+}
+
+.players {
+  display: flex;
+  flex: 1 0 calc(25% - 10px);
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  direction: rtl;
+}
+
+.end-round-btn {
+  background-color: #c92a2a;
+}
+
+.end-round-btn:hover {
+  background-color: #e03131;
+}
+
+.game-over-btn {
+  background-color: #c92a2a;
+}
+
+.game-over-btn:hover {
+  background-color: #e03131;
+}

@@ -1,0 +1,40 @@
+.form-group {
+  display: block;
+  margin: 12px 0;
+}
+
+.phase-set {
+  display: block;
+  margin-top: 8px;
+  width: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+}
+.phase-set:focus {
+  border-color: #212529;
+}
+
+.phase-label {
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.phase-rule-options {
+  margin-top: 0.5rem;
+}
+
+.phase-rule-group {
+  display: inline-block;
+  margin-right: 14px;
+}
+.phase-rule {
+  margin-right: 6px;
+}
+
+.start-game-btn {
+  width: 100%;
+  margin-top: 4px;
+}

@@ -1,0 +1,31 @@
+.phases {
+  padding-inline-start: 0;
+  list-style-type: none;
+  display: table;
+}
+
+.phase {
+  list-style-position: inside;
+  display: block;
+}
+
+.phase-name {
+  font-size: 1rem;
+}
+
+.current-phase .phase-name {
+  font-size: 1.2rem;
+}
+
+.completed-phase-name {
+  text-decoration-line: line-through;
+  color: gray;
+}
+
+.incomplete-phase-name {
+  color: gray;
+}
+
+.current-phase-name {
+  font-weight: 700;
+}

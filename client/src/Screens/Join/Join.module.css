@@ -1,0 +1,30 @@
+.join-container {
+  display: flex;
+  flex: 0 0 auto;
+  max-width: 400px;
+  justify-content: center;
+  align-content: center;
+  margin: 50px auto;
+}
+
+.player-name {
+  margin: 0.75rem 0;
+  height: 2rem;
+  width: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+.player-name:focus {
+  border-color: #212529;
+}
+
+img {
+  width: 100%;
+}
+
+.create-room-btn {
+  width: 100%;
+}

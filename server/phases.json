@@ -1,0 +1,26 @@
+{
+  "defaultPhases": [
+    "2 sets of 3",
+    "1 set of 3 + 1 run of 4",
+    "1 set of 4 + 1 run of 4",
+    "1 run of 7",
+    "1 run of 8",
+    "1 run of 9",
+    "2 sets of 4",
+    "7 cards of one color",
+    "1 set of 5 + 1 set of 2",
+    "1 set of 5 + 1 set of 3"
+  ],
+  "twistedPhases": [
+    "3 sets of 3",
+    "4 sets of 2",
+    "1 set of 5 + 1 run of 4",
+    "2 sets of 3 + 1 run of 3",
+    "1 set of 3 + 1 run of 6",
+    "2 runs of 4",
+    "1 run of 4 + 4 cards of one color",
+    "1 run of 5 of one color",
+    "8 cards of one color",
+    "9 cards of one color"
+  ]
+}

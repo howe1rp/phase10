@@ -1,0 +1,13 @@
+.lobby-player {
+  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: center;
+  max-width: 160px;
+}
+
+.lobby-player-name {
+  font-size: 1.1rem;
+  word-wrap: break-word;
+  font-weight: 700;
+  text-align: center;
+}

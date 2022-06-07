@@ -1,0 +1,64 @@
+.summary {
+  margin: 0 1rem 0.5rem 1rem;
+}
+
+.dialog {
+  display: block;
+}
+
+.text {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button-alt {
+  background-color: #868e96;
+}
+
+.button-alt:hover {
+  background-color: #adb5bd;
+}
+
+.form-group {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.label {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+
+.input {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: 4rem;
+}
+
+.ions {
+  margin-top: 8px;
+}
+
+.option-group {
+  display: inline-block;
+  margin-right: 14px;
+  margin-top: 0.5rem;
+}
+
+.option {
+  margin-right: 6px;
+}
+
+.btn {
+  margin: 0 0 0 auto;
+}

@@ -1,0 +1,42 @@
+.title {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 8px;
+}
+
+.lobby-container {
+  display: flex;
+  flex: 0 1 auto;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.no-grow-wrapper {
+  flex-grow: 0;
+}
+
+.lobby-settings {
+  align-self: flex-start;
+}
+
+.lobby-players-section {
+  flex: 0 1 auto;
+  margin-left: 1rem;
+  min-width: 50%;
+}
+
+.lobby-players-container {
+  display: flex;
+  flex: 1 0 calc(50% - 0.5rem);
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.join-link-container {
+  display: flex;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+}

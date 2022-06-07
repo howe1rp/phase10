@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  /* Because we want header to be sticky later */
+  height: 5rem;
+}
+
+.logo {
+  height: 3rem;
+}

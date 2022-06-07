@@ -1,0 +1,33 @@
+.player {
+  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 167px;
+  max-height: 242.5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  padding: 0 0 0.5rem 0;
+}
+
+.name,
+.phase,
+.score {
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.name {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.phase {
+  font-size: 1.1rem;
+}
+
+.score {
+  font-size: 1rem;
+}
