@@ -7,15 +7,14 @@ const { defaultPhases, twistedPhases } = require("./phases.json");
 
 app.use(cors());
 
-app.use(express.static("build"));
-
 // const PORT = process.env.PORT || 3001;
 const PORT = 3001;
 
 const server = http.createServer(app);
 
+app.use(express.static(path.resolve(__dirname, "./client-ui/build")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/build/index.html"));
+  res.sendFile(path.join(__dirname, "./build/index.html"));
 });
 
 /*
