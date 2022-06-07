@@ -268,6 +268,7 @@ io.on("connection", (socket) => {
   });
 });
 
+console.log(PORT);
 server.listen(PORT, () => {
-  console.log("SERVER IS RUNNING");
+  console.log(`SERVER IS RUNNING ON PORT: ${PORT}`);
 });
