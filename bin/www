@@ -8,37 +8,37 @@ var app = require("../app");
 var debug = require("debug")("server:server");
 var http = require("http");
 
-const { Server } = require("socket.io");
+// const { Server } = require("socket.io");
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || "4000");
-app.set("port", port);
+// var port = normalizePort(process.env.PORT || "4000");
+// app.set("port", port);
 
 /**
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
-const io = new Server(server, {
-  cors: {
-    origin: "*",
-  },
-});
+// var server = http.createServer(app);
+// const io = new Server(server, {
+//   cors: {
+//     origin: "*",
+//   },
+// });
 
-io.on("connect", (socket) => {
-  console.log(`connected to ${socket.id}`);
-});
+// io.on("connect", (socket) => {
+//   console.log(`connected to ${socket.id}`);
+// });
 
 /**
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
-server.on("error", onError);
-server.on("listening", onListening);
+// server.listen(port);
+// server.on("error", onError);
+// server.on("listening", onListening);
 
 /**
  * Normalize a port into a number, string, or false.
