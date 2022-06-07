@@ -7,7 +7,7 @@ import Lobby from "./Screens/Lobby/Lobby";
 import "./App.css";
 import Game from "./Screens/Game/Game";
 
-const socket = io("http://localhost:3001", { autoConnect: false });
+const socket = io("http://phase-ten.herokuapp", { autoConnect: false });
 function App() {
   const [players, setPlayers] = useState([]);
   const [join, setJoin] = useState(window.location.pathname !== "/");
