@@ -6,8 +6,8 @@ const LobbyPlayer = (props) => {
 
   useEffect(() => {
     const getAvatarImg = async () => {
-      fetch("https://placeimg.com/160/160/animals").then((data) =>
-        setAvatar(data)
+      fetch("https://placeimg.com/160/160/animals", { mode: "no-fetch" }).then(
+        (data) => setAvatar(data.blob())
       );
     };
 
