@@ -4,7 +4,7 @@ import styles from "./LobbyPlayer.module.css";
 const LobbyPlayer = (props) => {
   const [avatar, setAvatar] = useState();
   useEffect(() => {
-    setAvatar("https://placeimg.com/80/80/animals");
+    setAvatar("https://placeimg.com/160/160/animals");
   }, []);
 
   return (

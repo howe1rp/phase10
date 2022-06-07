@@ -9,7 +9,6 @@ const { defaultPhases, twistedPhases } = require("./phases.json");
 app.use(cors());
 
 const PORT = process.env.PORT || 3001;
-// const PORT = 3001;
 
 const server = http.createServer(app);
 
@@ -277,7 +276,6 @@ io.on("connection", (socket) => {
   });
 });
 
-console.log(PORT);
 server.listen(PORT, () => {
   console.log(`SERVER IS RUNNING ON PORT: ${PORT}`);
 });
