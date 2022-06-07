@@ -16,5 +16,8 @@
     "pug": "2.0.0-beta11",
     "socket.io": "^4.5.1",
     "uuidv4": "^6.2.13"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
