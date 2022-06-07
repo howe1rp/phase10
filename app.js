@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const path = require("path");
 const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
@@ -14,7 +15,7 @@ const server = http.createServer(app);
 
 app.use(express.static(path.resolve(__dirname, "./client-ui/build")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./build/index.html"));
+  res.sendFile(path.resolve(__dirname, "./build/index.html"));
 });
 
 /*
