@@ -13,9 +13,9 @@ const PORT = 3001;
 
 const server = http.createServer(app);
 
-app.use(express.static(path.resolve(__dirname, "./client-ui/build")));
+app.use(express.static(path.resolve(__dirname, "./client/build")));
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./build/index.html"));
+  res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
 });
 
 /*
