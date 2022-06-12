@@ -115,6 +115,7 @@ io.on("connection", (socket) => {
       // associated the player's socket to the player object
       players.players[socket.id] = newPlayer;
 
+      console.log(`User ${socket.id} joined room ${room}`);
       io.to(room).emit("roomPlayersChanged", {
         user: socket.id,
         room: room,
