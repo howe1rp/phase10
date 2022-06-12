@@ -32,6 +32,7 @@ const io = new Server(server, {
     methods: ["GET", "POST"],
   },
   pingTimeout: 3600000,
+  pingInterval: 600000,
 });
 
 const shuffleArray = (array) => {
