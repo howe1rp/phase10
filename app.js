@@ -31,6 +31,7 @@ const io = new Server(server, {
     origin: "*",
     methods: ["GET", "POST"],
   },
+  pingTimeout: 3600000,
 });
 
 const shuffleArray = (array) => {
@@ -124,19 +125,23 @@ io.on("connection", (socket) => {
   // the admin updated the phase order setting
   socket.on("phaseSettingUpdatedClient", ({ socket, value }) => {
     // get the room the user is in
-    const room = players.players[socket].room;
+    const room = players.players[socket]?.room;
 
-    // broadcast the updated value to the room
-    io.to(room).emit("phaseSettingUpdatedServer", value);
+    if (room) {
+      // broadcast the updated value to the room
+      io.to(room).emit("phaseSettingUpdatedServer", value);
+    }
   });
 
   // the admin updated the set of phases to use
   socket.on("phaseSetUpdatedClient", ({ socket, value }) => {
     // get the room the user is in
-    const room = players.players[socket].room;
+    const room = players.players[socket]?.room;
 
-    // broadcast the updated value to the room
-    io.to(room).emit("phaseSetUpdatedServer", value);
+    if (room) {
+      // broadcast the updated value to the room
+      io.to(room).emit("phaseSetUpdatedServer", value);
+    }
   });
 
   // the admin started the game
